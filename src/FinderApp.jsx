@@ -15,7 +15,7 @@ export const FinderApp = () => {
   const findIp = async( ip ) => {
     console.log(`IP to find :${ip}`);
     try {
-      const req = await fetch(`http://ipinfo.io/${ip}?token=${apiKey}`);
+      const req = await fetch(`https://ipinfo.io/${ip}?token=${apiKey}`);
       const res = await req.json();
       console.log(res);
 
